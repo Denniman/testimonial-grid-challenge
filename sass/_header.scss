@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    
+
+    &__headings {
+        margin-left: 1.5rem;
+        color: #fff;
+    }
+    
+}
+
+.img {
+    width: 15%;
+    border-radius: 50rem;
+    border: 2px solid #fff;
+}
+

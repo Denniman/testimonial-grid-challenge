@@ -1,0 +1,37 @@
+.card {
+    border-radius: .5rem;
+    padding: 2rem 2rem;
+}
+.daniel {
+    background-color: $moderate-violet;
+    grid-column: 2/6;
+}
+
+.jonathan {
+    background-color: $dark-grey-blue;
+    grid-column: 6/8;
+}
+
+.jeanette {
+    background-color: #fff;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.kira {
+    background-color: #fff;
+    grid-column: 8/10;
+    grid-row: 1/span 2;
+}
+
+.patrick {
+    background-color: $dark-blackish-blue;
+    grid-column: 4/8;
+    grid-row: 2/3;
+}
+
+.attribution {
+    text-align: center;
+    grid-column: 4/8;
+    grid-row: 3/ -1;
+}
