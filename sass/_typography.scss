@@ -1,9 +1,16 @@
 .heading-primary {
     color: $light-greyish-blue;
+    font-size: 1rem;
+
+    &--greydark{
+        color: $dark-grey-blue;
+        font-size: 1rem;  
+    }
 }
 
 .heading-tertiary {
     color: $light-grey;
+    font-size: .9rem;
 }
 
 .paragraph-primary {
@@ -11,8 +18,22 @@
     font-weight: 500;
     color: #fff;
     margin-top: 1.5rem;
+
+    &--dark {
+        color: $dark-grey-blue;
+        font-size: 1.5rem;
+        font-weight: 500; 
+    }
 }
 
 .paragraph-secondary {
     color: $light-grey;
+}
+
+.mb {
+    margin-bottom: 1.5rem;
+}
+
+.tl {
+    text-align: justify;
 }

@@ -35,9 +35,9 @@ body {
 }
 
 .container {
-    margin: 10rem auto;
+    margin: 4rem auto;
     display: grid;
     grid-template-columns: 1fr repeat(8, 7vw) 1fr;
     grid-template-rows: repeat(3, min-content);
-    gap: 1.5rem;
+    gap: 2rem;
 }
