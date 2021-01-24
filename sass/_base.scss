@@ -8,6 +8,7 @@ $light-greyish-blue: hsl(210, 46%, 95%);
 
 // RESPONSIVE BREAKPOINTS
 $bp-large: 90em;
+$bp-medium: 62.3em;
 $bp-small: 23.4em;
 
 *,
@@ -22,13 +23,13 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 
-    // @media only screen and (max-width: $bp-largest) {
-    //     font-size: 50%; //8px/16px = 50%; 1rem = 8px 
-    // }
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%; //8px/16px = 50%; 1rem = 8px 
+    }
 }
 
 body {
-    line-height: 1.6;
+    line-height: 1.5;
     font-weight: 400;
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: $bg-color;
@@ -38,6 +39,21 @@ body {
     margin: 4rem auto;
     display: grid;
     grid-template-columns: 1fr repeat(8, 7vw) 1fr;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: 1fr repeat(4, 7vw) repeat(4, 6vw) 1fr;
+    // grid-template-columns: 1fr repeat(auto-fit, minmax(6rem, 7vw)) 1fr;
+
+    grid-template-rows: repeat(2, max-content) min-content;
     gap: 2rem;
+
+
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 5rem 3rem 5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin: 3rem 3rem 0 3rem;
+    }
+
 }

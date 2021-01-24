@@ -10,20 +10,28 @@
 }
 
 .img {
-    width: 10%;
+    width: 25px;
+    height: 25px;
     border-radius: 50rem;
-    border: 2px solid #fff;
+}
+
+.img-1 {
+    border: 2px solid $moderate-violet;
 }
 
 .img-2 {
-    width: 20%;
+    border: 2px solid #fff;
 }
 
 .img-3 {
-    width: 25%;
+    border: 2px solid #fff;
+}
+
+.img-4 {
+    border: 2px solid $moderate-violet;
 }
 
 .img-5 {
-    width: 25%;
+    border: 2px solid #fff;
 }
 

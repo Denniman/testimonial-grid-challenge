@@ -9,8 +9,15 @@
 }
 
 .heading-tertiary {
-    color: $light-grey;
+    color: $light-greyish-blue;
+    opacity: 50%;
     font-size: .9rem;
+
+    &--greydark{
+        color: $dark-grey-blue;
+        opacity: 50%;
+        font-size: .9rem;  
+    }
 }
 
 .paragraph-primary {
@@ -30,8 +37,16 @@
     color: $light-grey;
 }
 
+.paragraph-secondary--dark {
+    color: $dark-grey-blue;;
+}
+
 .mb {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.mt {
+    margin-top: 2rem;
 }
 
 .tl {

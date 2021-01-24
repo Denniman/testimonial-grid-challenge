@@ -8,9 +8,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 62.3em) {
+    html {
+      font-size: 50%; } }
 
 body {
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 400;
   font-family: 'Barlow Semi Condensed', sans-serif;
   background-color: #ecf2f8; }
@@ -19,8 +22,17 @@ body {
   margin: 4rem auto;
   display: grid;
   grid-template-columns: 1fr repeat(8, 7vw) 1fr;
-  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: 1fr repeat(4, 7vw) repeat(4, 6vw) 1fr;
+  grid-template-rows: repeat(2, max-content) min-content;
   gap: 2rem; }
+  @media only screen and (max-width: 62.3em) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin: 3rem 5rem 3rem 5rem; } }
+  @media only screen and (max-width: 23.4em) {
+    .container {
+      margin: 3rem 3rem 0 3rem; } }
 
 .heading-primary {
   color: #ecf2f8;
@@ -30,8 +42,13 @@ body {
     font-size: 1rem; }
 
 .heading-tertiary {
-  color: #cfcfcf;
+  color: #ecf2f8;
+  opacity: 50%;
   font-size: .9rem; }
+  .heading-tertiary--greydark {
+    color: #48556a;
+    opacity: 50%;
+    font-size: .9rem; }
 
 .paragraph-primary {
   font-size: 1.5rem;
@@ -46,15 +63,21 @@ body {
 .paragraph-secondary {
   color: #cfcfcf; }
 
+.paragraph-secondary--dark {
+  color: #48556a; }
+
 .mb {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1rem; }
+
+.mt {
+  margin-top: 2rem; }
 
 .tl {
   text-align: justify; }
 
 .card {
   border-radius: .5rem;
-  padding: 2rem 2rem; }
+  padding: 2rem 2rem 2rem; }
 
 .daniel {
   background-image: url(../images/bg-pattern-quotation.svg);
@@ -82,7 +105,7 @@ body {
   grid-column: 4/8;
   grid-row: 2/3; }
 
-.attribution {
+.footer {
   text-align: center;
   grid-column: 4/8;
   grid-row: 3/ -1; }
@@ -94,15 +117,21 @@ body {
     color: #fff; }
 
 .img {
-  width: 10%;
-  border-radius: 50rem;
-  border: 2px solid #fff; }
+  width: 25px;
+  height: 25px;
+  border-radius: 50rem; }
+
+.img-1 {
+  border: 2px solid #7541c8; }
 
 .img-2 {
-  width: 20%; }
+  border: 2px solid #fff; }
 
 .img-3 {
-  width: 25%; }
+  border: 2px solid #fff; }
+
+.img-4 {
+  border: 2px solid #7541c8; }
 
 .img-5 {
-  width: 25%; }
+  border: 2px solid #fff; }
