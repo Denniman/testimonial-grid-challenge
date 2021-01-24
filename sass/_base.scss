@@ -36,9 +36,9 @@ body {
 }
 
 .container {
-    margin: 4rem auto;
+    margin: 7rem auto;
     display: grid;
-    grid-template-columns: 1fr repeat(8, 7vw) 1fr;
+    // grid-template-columns: 1fr repeat(8, 7vw) 1fr;
     grid-template-columns: 1fr repeat(4, 7vw) repeat(4, 6vw) 1fr;
     // grid-template-columns: 1fr repeat(auto-fit, minmax(6rem, 7vw)) 1fr;
 
